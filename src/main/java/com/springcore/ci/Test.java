@@ -10,7 +10,7 @@ public class Test {
 		 ApplicationContext context= new ClassPathXmlApplicationContext("com/springcore/ci/ciconfig.xml");
 		 Person p=(Person)context.getBean("Person2");
 		 System.out.println(p);
-		 Addition add=(Addition)context.getBean("add");
+		 Addition add=(Addition)context.getBean("add2");
 		 System.out.println(add);
 		 
 

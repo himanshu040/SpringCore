@@ -21,4 +21,9 @@
 <!--It will call the constructor of addition with String arguments if constructor with 
                  string arguments are available otherwise it automation call the constructor which came first -->
 <bean class="com.springcore.ci.Addition" name="add" c:a="30.80" c:b="40.60"/>
+<bean class="com.springcore.ci.Addition" name="add2" >
+  <constructor-arg value="2000.05" type="double" index="1"/>
+   <constructor-arg value="3000.08" type="double" index="0"/>
+
+</bean>
 </beans>
