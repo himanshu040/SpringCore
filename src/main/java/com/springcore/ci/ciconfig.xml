@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+  xmlns:c="http://www.springframework.org/schema/c"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/p">
+ 
+ 
+ <bean class="com.springcore.ci.Certificate" name="Certi1" c:name="Android Using Java" />
+<bean class="com.springcore.ci.Person" name="Person1" >
+  <constructor-arg value="Himanshu"/>
+  <constructor-arg value="12345" type="int"/>
+  <constructor-arg ref="Certi1"/> 
+</bean> 
+<bean class="com.springcore.ci.Person" name="Person2" c:name="Shahshank" c:personId="12345678" c:certi-ref="Certi1" />
+
+<!--It will call the constructor of addition with String arguments if constructor with 
+                 string arguments are available otherwise it automation call the constructor which came first -->
+<bean class="com.springcore.ci.Addition" name="add" c:a="30.80" c:b="40.60"/>
+</beans>
