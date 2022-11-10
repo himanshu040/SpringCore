@@ -21,13 +21,11 @@ public class Jeans implements InitializingBean,DisposableBean {
 		// TODO Auto-generated constructor stub
 	}
 
-	@Override
 	public void afterPropertiesSet() throws Exception {
 		// TODO Auto-generated method stub
 		System.out.println("Taking jeans: Init");
 	}
 
-	@Override
 	public void destroy() throws Exception {
 		// TODO Auto-generated method stub
 		System.out.println("Destroy Jeans");
@@ -37,8 +35,7 @@ public class Jeans implements InitializingBean,DisposableBean {
 	public String toString() {
 		return "Jeans [price=" + price + "]";
 	}
-	
-	
+
 	
 
 }

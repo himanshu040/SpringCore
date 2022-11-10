@@ -10,11 +10,13 @@ public class Test {
 		// TODO Auto-generated method stub
 		
     AbstractApplicationContext context=new ClassPathXmlApplicationContext("com/springcore/lifecycle/config.xml");
-    Shirt s=(Shirt) context.getBean("s1");
-    System.out.println(s);
-   
-    Jeans j=(Jeans) context.getBean("j1");
-    System.out.println(j);
+//    Shirt s=(Shirt) context.getBean("s1");
+//    System.out.println(s);
+//   
+//    Jeans j=(Jeans) context.getBean("j1");
+//    System.out.println(j);
+    Exampe e=(Exampe)context.getBean("e1");
+     System.out.println(e);
     context.registerShutdownHook();
   
  
