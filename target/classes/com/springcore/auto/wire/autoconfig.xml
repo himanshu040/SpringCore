@@ -8,8 +8,8 @@
  http://www.springframework.org/schema/context
  http://www.springframework.org/schema/p">
  
- <bean class="com.springcore.auto.wire.Address" name="address1" p:state="Uttar Pradesh" p:city="Lucknow"/>
- <bean class="com.springcore.auto.wire.Employ" name="emp1" autowire="byName"/>
-
+ 
+  <bean class="com.springcore.auto.wire.Address" name="address" p:street="nbdsaj" p:city="Noida"/>
+ <bean class="com.springcore.auto.wire.Emp" name="emp1" autowire="constructor"/>
  
 </beans>
