@@ -9,8 +9,10 @@ public class Test {
 		// TODO Auto-generated method stub
 		 ApplicationContext context= new ClassPathXmlApplicationContext("com/springcore/collection/collectionconfig.xml");
 		 Emp emp1=(Emp) context.getBean("Emp1");
-		 System.out.println(emp1);
-		 
+		 System.out.println(emp1.getEmpname());
+		 System.out.println(emp1.getAddress());
+		 System.out.println(emp1.getCourse());
+		 System.out.println(emp1.getPhones());
 		 
 	}
 

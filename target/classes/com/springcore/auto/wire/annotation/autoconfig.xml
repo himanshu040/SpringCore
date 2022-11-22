@@ -6,10 +6,12 @@
  xsi:schemaLocation="http://www.springframework.org/schema/beans
  https://www.springframework.org/schema/beans/spring-beans.xsd
  http://www.springframework.org/schema/context
- http://www.springframework.org/schema/p">
+  http://www.springframework.org/schema/context/spring-context.xsd">
  
+ <context:annotation-config />
  
-  <bean class="com.springcore.auto.wire.Address" name="address" p:street="nbdsaj" p:city="Noida"/>
- <bean class="com.springcore.auto.wire.Emp" name="emp1" autowire="byName"/>
+  <bean class="com.springcore.auto.wire.annotation.Address" name="address1" p:street="nbdsaj" p:city="Noida"/>
+  <bean class="com.springcore.auto.wire.annotation.Address" name="address2" p:street="nbdsaj" p:city="Lucknow"/>
+ <bean class="com.springcore.auto.wire.annotation.Emp" name="emp1"/>
  
 </beans>

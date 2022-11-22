@@ -10,6 +10,6 @@
  
  
   <bean class="com.springcore.auto.wire.Address" name="address" p:street="nbdsaj" p:city="Noida"/>
- <bean class="com.springcore.auto.wire.Emp" name="emp1"/>
+ <bean class="com.springcore.auto.wire.Emp" name="emp1" autowire="byName"/>
  
 </beans>
